@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFF;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #edae00;
+}
+
+#q1 {
+   width: 15vw;
+   height: 15vh;
+}
+
+#number {
+    width: 40%;
+}
+
+#resultadoQ1 {
+    font-size: 1.5em;
+    font-family: roboto, "Courier New", monospace;
+    color: #FFF;
+}

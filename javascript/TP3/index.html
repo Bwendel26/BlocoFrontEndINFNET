@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Bruno Fernandes">
+        <title>TP3</title>
+        <link rel="stylesheet" type="text/css" href="reset.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+        
+    </head>
+    <body>
+        <header>
+            <br/><br/>
+            <nav">
+                
+            </nav>
+            <br/><br/>
+        </header>
+        <main>
+            <div id="q1">
+                <form id="form1" name="form1" method="post" action="">
+                    <div>
+                        <label for="number">Primeiro número:</label>
+                        <input name="number" type="text" id="number1" size="10"/>
+                    </div>
+                    <div>  
+                        <label for="number">Segundo número:</label>
+                        <input name="number" type="text" id="number2" size="10"/>
+                    </div>
+                    <input type="submit" onclick="calculaIntervaloNumeros()" value="calcula"/>
+                </form>
+                <div id="resultadoQ1"></div>
+            </div>
+            <div id="q2"></div>
+            <div id="q3"></div>
+            <div id="q4"></div>
+            <div id="q5"></div>
+            <div id="q6"></div>
+        </main>
+        <br/>
+        <hr/>
+        <br/>
+        <footer>
+            <p id="texto">Copyright</p>
+        </footer>
+        
+        <script>
+            var app = { };
+            app.getComponente = function (nome){
+            if( !app[nome]) {
+            app[nome] = { $ctrl:{} };
+            }
+            return app[nome];
+        };
+            </script>
+            <script src="./q1/q1.js"></script>
+            <script src="q2.js"></script>
+            <script src="q3.js"></script>
+            <script src="q4.js"></script>
+            <script src="q5.js"></script>
+            <script src="q6.js"></script>
+    </body>
+</html>
