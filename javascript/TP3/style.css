@@ -14,9 +14,10 @@ main {
     background-color: #edae00;
 }
 
-#q1 {
+#board {
    width: 15vw;
    height: 15vh;
+   margin: 5px auto;
 }
 
 #number {
