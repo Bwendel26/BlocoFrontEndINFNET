@@ -8,6 +8,9 @@ o tempo necessário para a execução. (Dica: usar o objeto javascript Date)
 */
 
 function calculaFatorial() {
+
+    const inicio = new Date().getMilliseconds();
+
     entrada = parseFloat(document.getElementById("fatorial").value);
     
     document.getElementById("form2").addEventListener('submit', e => {
@@ -19,5 +22,7 @@ function calculaFatorial() {
         fatorial *= index;
     }
 
-    return document.getElementById("resultadoQ2").innerHTML = fatorial;
+    const total = new Date().getMilliseconds() - inicio;
+    resultado = `${entrada}! = ${fatorial} (${total} milisegundos);`;
+    return document.getElementById("resultadoQ2").innerHTML = resultado;
 }
