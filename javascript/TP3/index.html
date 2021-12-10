@@ -12,36 +12,42 @@
     </head>
     <body>
         <header>
-            <br/><br/>
-            <nav">
-                
-            </nav>
-            <br/><br/>
+            <h1>Calculadora</h1>
         </header>
         <main>
-            <div id="board">
+            <div class="board">
                 <form id="form1" name="form1" method="post" action="">
+                    <h2>Intervalo entre numeros</h2>
                     <div>
                         <label for="number">Primeiro número:</label>
-                        <input name="number" type="text" id="number1" size="10"/>
+                        <input name="number" type="number" id="number1" size="10"/>
                     </div>
                     <div>  
                         <label for="number">Segundo número:</label>
-                        <input name="number" type="text" id="number2" size="10"/>
+                        <input name="number" type="number" id="number2" size="10"/>
                     </div>
                     <input type="submit" onclick="calculaIntervaloNumeros()" value="calcula"/>
                 </form>
                 <div id="resultadoQ1"></div>
             </div>
-            <div id="q2"></div>
+            <div id="q2">
+                <div class="board">
+                    <form id="form2" name="form2" method="post" action="">
+                        <h2>Fatorial</h2>
+                        <div>
+                            <label for="number">Fatorial de:</label>
+                            <input name="number" type="number" id="fatorial" size="10"/>
+                        </div>
+                        <input type="submit" onclick="calculaFatorial()" value="calcula"/>
+                    </form>
+                    <div id="resultadoQ2"></div>
+                </div>
+            </div>
             <div id="q3"></div>
             <div id="q4"></div>
             <div id="q5"></div>
             <div id="q6"></div>
         </main>
-        <br/>
-        <hr/>
-        <br/>
         <footer>
             <p id="texto">Copyright</p>
         </footer>
@@ -56,7 +62,7 @@
         };
             </script>
             <script src="./q1/q1.js"></script>
-            <script src="q2.js"></script>
+            <script src="./q2/q2.js"></script>
             <script src="q3.js"></script>
             <script src="q4.js"></script>
             <script src="q5.js"></script>

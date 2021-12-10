@@ -1,31 +1,65 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+:root {
+    --main-color: #6103ce;
+    --white: #FFF
 }
 
 body {
-    background-color: #FFF;
+    background-color: var(--white);
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    font-size: 1.5em;
+    color: var(--main-color);
+}
+
+header {
+
+    width: 90vw;
+    height: 5vh;
+    margin: 10px auto 10px auto;
+}
+
+h1 {
+    text-align: center;
+    color: var(--main-color);
+    font-size: 2em;
+}
+
+h2 {
+    padding: 5px;
+    text-align: center;
+    color: var(--white);
 }
 
 main {
-    width: 90%;
+    width: 100vw;
     margin: 0 auto;
-    background-color: #edae00;
 }
 
-#board {
-   width: 15vw;
+footer {
+    width: 100vw;
+    margin: 5px auto;
+    align-content: center;
+    clear: both;
+    position: fixed;
+    bottom: 0;
+}
+
+p {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.board {
+   width: 90vw;
    height: 15vh;
-   margin: 5px auto;
+   margin: 0px auto 5px auto;
+   border-radius: 10px;
+
+   color: var(--white);
+   background-color: var(--main-color);
 }
 
 #number {
     width: 40%;
-}
-
-#resultadoQ1 {
-    font-size: 1.5em;
-    font-family: roboto, "Courier New", monospace;
-    color: #FFF;
 }

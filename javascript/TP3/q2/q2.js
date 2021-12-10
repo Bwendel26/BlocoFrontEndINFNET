@@ -7,3 +7,17 @@ o tempo necessário para a execução. (Dica: usar o objeto javascript Date)
     O código deve calcular o fatorial e não apenas imprimir uma string com a resposta.
 */
 
+function calculaFatorial() {
+    entrada = parseFloat(document.getElementById("fatorial").value);
+    
+    document.getElementById("form2").addEventListener('submit', e => {
+        e.preventDefault();
+    });
+
+    fatorial = 1;
+    for (let index = entrada; index > 1; index--) {
+        fatorial *= index;
+    }
+
+    return document.getElementById("resultadoQ2").innerHTML = fatorial;
+}
