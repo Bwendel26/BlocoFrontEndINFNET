@@ -15,20 +15,22 @@
             <h1>Teste de performance 3</h1>
         </header>
         <main>
-            <div class="board">
-                <form id="form1" name="form1" method="post" action="">
-                    <h2>Intervalo entre numeros</h2>
-                    <div>
-                        <label for="number">Primeiro número:</label>
-                        <input name="number" type="number" id="number1" size="10"/>
-                    </div>
-                    <div>  
-                        <label for="number">Segundo número:</label>
-                        <input name="number" type="number" id="number2" size="10"/>
-                    </div>
-                    <input type="submit" onclick="calculaIntervaloNumeros()" value="calcula"/>
-                </form>
-                <div id="resultadoQ1"></div>
+            <div id="q1">
+                <div class="board">
+                    <form id="form1" name="form1" method="post" action="">
+                        <h2>Retornar multiplos de 2 e 3 entre os valores</h2>
+                        <div>
+                            <label for="number">Primeiro número:</label>
+                            <input name="number" type="number" id="number1" size="10"/>
+                        </div>
+                        <div>  
+                            <label for="number">Segundo número:</label>
+                            <input name="number" type="number" id="number2" size="10"/>
+                        </div>
+                        <input type="submit" onclick="calculaIntervaloNumeros()" value="calcula"/>
+                    </form>
+                    <div id="resultadoQ1"></div>
+                </div>
             </div>
             <div id="q2">
                 <div class="board">
@@ -49,13 +51,33 @@
                     <table id="resultadoQ3" class="table">
                         <tr>
                             <td>Número registro</td>
-                            <td>Nota</td>
+                            <td>|Nota</td>
                         </tr>
                     </table>
                     <input type="submit" onclick="geraRelatorioAlunos()" value="gerar realatorio alunos"/>
                 </div>
             </div>
-            <div id="q4"></div>
+            <div id="q4">
+                <div class="board">
+                    <form id="form4" name="form4" method="post" action="">
+                        <h2>Ordena valores</h2>
+                        <div>
+                            <label for="number">Quantidade de números:</label>
+                            <input name="number" type="number" id="qtdN" size="10"/>
+                        </div>
+                        <div>  
+                            <label for="number">Valor mínimo:</label>
+                            <input name="number" type="number" id="valMin" size="10"/>
+                        </div>
+                        <div>  
+                            <label for="number">Valor máximo:</label>
+                            <input name="number" type="number" id="valMax" size="10"/>
+                        </div>
+                        <input type="submit" onclick="ordenaValores()" value="calcular"/>
+                    </form>
+                    <div id="resultadoQ4"></div>
+                </div>
+            </div>
             <div id="q5"></div>
             <div id="q6"></div>
         </main>
